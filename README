@@ -1,1 +1,48 @@
+# Food Delivery Time Prediction — EDA and Machine Learning
+
+## Overview
+This project analyzes 38,964 food delivery orders through Exploratory Data Analysis (EDA) and builds Machine Learning models to predict delivery time in minutes.
+
+## What I Did
+- **Data Cleaning:** Standardized three different time formats and handled missing values using the median.
+- **Feature Engineering:** Extracted month, day, pickup hour, waiting time, and city codes using regular expressions.
+- **Exploratory Data Analysis (EDA):** Analyzed the impact of traffic, weather, distance, vehicle type, and festivals on delivery time.
+- **Machine Learning:** Trained and evaluated Linear Regression and Random Forest models.
+- **Data Leakage Prevention:** Removed the `delivery_speed` column because it was derived from delivery time and could lead to data leakage.
+
+## Key Findings
+- **Slowest Traffic Condition:** To be determined from the EDA results.
+- **Slowest Weather Condition:** To be determined from the EDA results.
+- **Distance and Delivery Time Correlation:** To be determined from the correlation analysis.
+- **Most Important Feature:** To be determined from the Random Forest feature importance analysis.
+
+## Model Results
+
+| Model | R² Score | MAE (Minutes) |
+|---|---:|---:|
+| Linear Regression | 0.5900 | 4.6940 |
+| Random Forest | 0.8174 | 3.1374 |
+
+### Best-Performing Model
+Random Forest performed better than Linear Regression, achieving an R² score of 0.8174 and a Mean Absolute Error (MAE) of approximately 3.14 minutes.
+
+## Project Files
+- `food_delivery_dataset.csv` — Original dataset.
+- `food_delivery_cleaned.csv` — Cleaned dataset.
+- `food_delivery_eda_ml.ipynb` 
+
+## How to Run
+1. Open the notebook in Google Colab.
+2. Upload the required CSV dataset files.
+3. Ensure the file paths in the notebook are correct.
+4. Select **Runtime → Run all** to execute the notebook.
+
+## Technologies Used
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- Google Colab
 
